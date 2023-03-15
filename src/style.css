@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&family=Kanit:wght@700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components{
+    .btn{
+        @apply border border-black px-3 py-3 bg-white text-black  w-40 text-center my-2 shadow-md rounded-md text-2xl font-bold
+    }
+    .flex-centered{
+        @apply flex justify-center items-center gap-3
+    }
+    .flex-vertical{
+        @apply flex flex-col justify-start md:justify-around items-start gap-5 md:justify-center md:gap-5
+    }
+    .h1{
+        @apply font-extrabold text-5xl 
+    }
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,button{
+    font-family: 'Kanit', sans-serif;
+
+}
